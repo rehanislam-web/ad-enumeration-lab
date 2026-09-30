@@ -9,7 +9,7 @@ Enumerating a hardened Windows Server 2025 domain (`shaka.com`) from Kali Linux 
 | Role | Details |
 |---|---|
 | Attacker | Kali Linux (Rolling) |
-| Domain controller | `WIN-T2RBR8AQLMU` — Windows Server 2025 @ `192.168.23.142` |
+| Domain controller | `WIN-T2RBR8AQLMU` — Windows Server 2025 |
 | Domain | `shaka.com` |
 | Bind account | `hrusr1` (low-privilege domain user) |
 
@@ -31,7 +31,7 @@ A custom collector (`collector/ad_ldap_collector.py`) built on Impacket:
 
 ```bash
 pip install -r requirements.txt
-python3 collector/ad_ldap_collector.py -dc 192.168.23.142 -d shaka.com -u hrusr1
+python3 collector/ad_ldap_collector.py -dc <DC-IP> -d shaka.com -u hrusr1
 # password is prompted securely via getpass — never stored
 ```
 

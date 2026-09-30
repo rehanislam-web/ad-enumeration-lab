@@ -22,7 +22,7 @@ publication. It was used to enumerate the shaka.com lab domain.
 
 Usage:
     pip install impacket
-    python3 ad_ldap_collector.py -dc 192.168.23.142 -d shaka.com -u hrusr1
+    python3 ad_ldap_collector.py -dc <DC-IP> -d shaka.com -u hrusr1
 
 The password is read securely via getpass (never stored or logged).
 
