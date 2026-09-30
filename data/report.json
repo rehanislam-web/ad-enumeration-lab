@@ -1,0 +1,21 @@
+{
+ "paths": {
+  "ADMINISTRATOR": {
+   "target": "DOMAIN ADMINS",
+   "hops": 1,
+   "path": [
+    "ADMINISTRATOR",
+    "DOMAIN ADMINS"
+   ],
+   "edges": [
+    "MemberOf"
+   ]
+  },
+  "GUEST": null,
+  "KRBTGT": null,
+  "HR": null,
+  "HRUSR1": null,
+  "STUDENT1": null
+ },
+ "ace_edges": []
+}
